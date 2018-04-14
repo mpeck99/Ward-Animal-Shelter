@@ -12,3 +12,6 @@ app.use(bodyParser.json());
 app.listen(PORT, function(){
   console.log('Server is running on Port: ',PORT);
 });
+app.get('/', function (req, res) {
+  res.send('hello world')
+})

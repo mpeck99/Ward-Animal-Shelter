@@ -4,8 +4,6 @@ export default class About extends Component {
     render() {
         return (
           <div>
-          <Navigation />
-
           <h1>Contact Page!!</h1>
           </div>
         )

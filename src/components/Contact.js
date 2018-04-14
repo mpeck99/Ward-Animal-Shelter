@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Navigation from './Navigation';
-export default class Home extends Component {
+export default class About extends Component {
     render() {
         return (
           <div>
           <Navigation />
-          <h1>Home Page</h1>
+
+          <h1>Contact Page!!</h1>
           </div>
         )
     }

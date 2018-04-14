@@ -1,27 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Home from './components/index';
-
-
+import Home from './components/index'
+import About from './components/About';
+import Contact from './components/Contact';
+import Navigation from './components/Navigation';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import './css/styles.css';
 class App extends Component {
   render() {
     return (
       <Router>
-              <div>
-                <h2>Welcome to React Express Tutorial</h2>
-                <ul>
-                <li><Link to={'/'}>Home</Link></li>
-                  <li><Link to={'#'}>About</Link></li>
-                  <li><Link to={'#'}>Contact</Link></li>
-                </ul>
-                <hr />
-                <Switch>
-                    <Route exact path='/index' component={Home} />
-                </Switch>
-              </div>
-            </Router>
+      <div>
+        <Route exact path="/" component={Home}/>
+        <Route path="/about" component={About}/>
+        <Route path="/contact" component={Contact}/>
+        </div>
+      </Router>
+
     );
   }
 }

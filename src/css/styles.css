@@ -3,18 +3,29 @@ a{
  font-size: 20px;
  float: right !important;
  display: inline-block;
+ text-decoration: none;
 }
 a:visited, a{
   color: white;
+  text-decoration: none;
 }
 h1{
   padding: 10px;
 }
 html, #root{
   background-color: #CACFD6;
+  height: 100%;
+  font-family: 'Eczar', serif;
+
 }
 .navbar{
   width: 100%;
+}
+.collapse .navbar-collapse{
+  float: right;
+}
+.home{
+  display: inline;
 }
 .navbar-brand{
   float: left;
@@ -23,7 +34,10 @@ html, #root{
  .logo{
   width: 75px;
 }
-.header-img{
+.card{
+  background-color: #FF5E5B;
+}
+.jumbotron{
     background-image: url('../components/assets/header.jpg');
     background-color: rgba(255,255,255,0.6);
     background-blend-mode: lighten;
@@ -32,6 +46,16 @@ html, #root{
     background-position: center center;
     text-align: center;
     color: #333745;
+}
+.body{
+  height: 100%;
+}
+.header-info{
+  display: inline-block;
+  margin: 10px;
+}
+.header-info button{
+  margin: 20px;
 }
 .header-img h1{
   font-size: 50px;
@@ -50,9 +74,13 @@ html, #root{
   font-size: 28px;
 }
 .contact-us{
-  border-radius: 10px;
+  border-radius: 50px;
   opacity: .8;
 }
+ul li{
+  float: right;
+}
+
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
@@ -63,5 +91,9 @@ and (max-device-width : 480px) {
   }
   .logo{
    width: 30px;
+ }
+ .navbar-toggler{
+   border-style: none;
+   margin-top: 20px;
  }
 }

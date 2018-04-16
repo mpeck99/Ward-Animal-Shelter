@@ -6,7 +6,7 @@ export default class About extends Component {
           <div>
           <div className="card">
             <div className="card-body">
-              <h1>Who We Are Us</h1>
+              <h1>Who We Are </h1>
             </div>
           </div>
           </div>

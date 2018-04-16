@@ -7,6 +7,7 @@
     "bootstrap": "^4.1.0",
     "cors": "^2.8.4",
     "express": "^4.16.3",
+    "mongodb": "^3.0.6",
     "mongoose": "^5.0.14",
     "nodemon": "^1.17.3",
     "p": "^0.2.0",
@@ -21,5 +22,18 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "To run this download the zipped file then navigate to the project in your command prompt. Type npm start to start the react portion of the project. open another command prompt and navigate to the project type node server/server to run the express server.",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpeck99/Ward-Animal-Shelter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpeck99/Ward-Animal-Shelter/issues"
+  },
+  "homepage": "https://github.com/mpeck99/Ward-Animal-Shelter#readme"
 }

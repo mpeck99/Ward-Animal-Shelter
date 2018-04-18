@@ -2,7 +2,7 @@ import React, {PropTypes} from 'react';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
-import { Link } from 'react-router-dom';
+import { Link, IndexLink } from 'react-router-dom';
 import Logo from './assets/paw.png';
 //import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';

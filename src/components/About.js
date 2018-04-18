@@ -4,14 +4,14 @@ export default class About extends Component {
     render() {
         return (
           <div>
-            <div className="container">
+            <div>
               <div className="jumbotron about">
-                <h1>Bootstrap Tutorial</h1>
-                  <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing
-                  responsive, mobile-first projects on the web.</p>
+                <h1>About US</h1>
+                  <p>We are a small animal shelter located in the town of Ward, Arkansas. We are commited to helping abandoned and homeless animals in our community. We do are best to find the perfect homes for any of the animals we come across and provide them with all the love and care they need until that happens.</p>
+                <h1>Our Mission</h1>
+                  <p>Our goal is to help each animal we rescue to find a forever home with a loving family.</p>
               </div>
-              <p>This is some text.</p>
-              <p>This is another text.</p>
+
             </div>
           </div>
         )

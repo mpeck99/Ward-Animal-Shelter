@@ -39,8 +39,11 @@ a:visited, a{
 a img{
   padding: 20px;
 }
+a .active{
+  color: red;
+}
 .logo{
- width: 75px;
+ width: 100px;
 }
 /* Homepage Animal Search */
 .Row
@@ -93,23 +96,20 @@ border-style: none;
   display: inline-block;
   margin: 10px;
 }
-.header-info button{
-  margin: 20px;
-}
-.contact-us{
-  border-radius: 50px;
-  opacity: .8;
-}
 .header-img h1{
   font-size: 50px;
 }
 .header-img p{
   font-size: 38px;
 }
-.header-img button{
+.header-img a{
   color: white;
   background-color: #00CECB;
   font-size: 28px;
+  border-radius: 50px;
+  opacity: .8;
+  margin: 5px;
+  padding: 10px;
 }
 .navbar-brand a{
   color: #333745;
@@ -127,6 +127,21 @@ h2{
   font-size: 50px;
   color: #333745;
   margin: 10px;
+}
+.about h1{
+  background-color: #00CECB;
+  padding: 20px;
+  width: 100%;
+  font-size: 50px;
+}
+.about p{
+  font-size: 42px;
+  text-align: center;
+}
+.about{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 50%;
+  margin: 0 auto;
 }
 /* Contact Page*/
 
@@ -166,8 +181,9 @@ and (max-device-width : 480px) {
    font-size: 12px;
    margin-top: 0px;
  }
- .jumbotron{
+ .header-img{
    height: 250px;
+   width: 100%;
  }
  .Column
  {

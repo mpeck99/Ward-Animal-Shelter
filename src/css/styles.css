@@ -1,4 +1,31 @@
-a{
+/* body and html*/
+html, #root{
+  background-color: #CACFD6;
+  height: 100%;
+  font-family: 'Eczar', serif;
+}
+/* headers and paragraphs*/
+h1{
+  padding: 10px;
+}
+/* navigation */
+.navbar{
+  width: 100%;
+}
+.collapse .navbar-collapse{
+  float: right;
+}
+ul li{
+  float: right;
+}
+.home{
+  display: inline;
+}
+.navbar-brand{
+  float: left;
+  clear: both;
+}
+.link{
  margin: 20px;
  font-size: 20px;
  float: right !important;
@@ -9,46 +36,58 @@ a:visited, a{
   color: white;
   text-decoration: none;
 }
-h1{
-  padding: 10px;
+a img{
+  padding: 20px;
 }
-html, #root{
-  background-color: #CACFD6;
-  height: 100%;
-  font-family: 'Eczar', serif;
-
+.logo{
+ width: 75px;
 }
-.navbar{
-  width: 100%;
+/* Homepage Animal Search */
+.Row
+{
+    display: table;
+    width: 100%; /*Optional*/
 }
-.collapse .navbar-collapse{
-  float: right;
+.Column
+{
+    height: 50px;
+    display: table-cell;
+    width: 33.33%;
+    text-align: center;
 }
-.home{
-  display: inline;
+.dogs,.other{
+  background-color: #FF5E5B
 }
-.navbar-brand{
-  float: left;
-  clear: both;
+a:hover{
+  text-decoration: none;
+  color: white;
 }
- .logo{
-  width: 75px;
+.cats{
+  background-color: #00CECB;
+  vertical-align: middle !important;
+  text-align: center !important;
 }
-.card{
-  background-color: #FF5E5B;
+.cats button{
+background-color: Transparent;
+border-style: none;
 }
-.jumbotron{
+.featured-animals{
+  margin: 10px !important;
+  height: 500px;
+}
+/* Homepage Header/Jumbotron */
+.header-img{
     background-image: url('../components/assets/header.jpg');
     background-color: rgba(255,255,255,0.6);
     background-blend-mode: lighten;
     width: 100%;
     height: 500px;
-    background-position: center center;
     text-align: center;
     color: #333745;
-}
-.body{
-  height: 100%;
+    margin-bottom: 0px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
 }
 .header-info{
   display: inline-block;
@@ -56,6 +95,10 @@ html, #root{
 }
 .header-info button{
   margin: 20px;
+}
+.contact-us{
+  border-radius: 50px;
+  opacity: .8;
 }
 .header-img h1{
   font-size: 50px;
@@ -73,14 +116,22 @@ html, #root{
   text-decoration: none;
   font-size: 28px;
 }
-.contact-us{
-  border-radius: 50px;
-  opacity: .8;
+.card img, .card-body{
+  width: 400px;
 }
-ul li{
-  float: right;
+.animal h1{
+  text-align: center;
 }
+h2{
+  text-align: center;
+  font-size: 50px;
+  color: #333745;
+  margin: 10px;
+}
+/* Contact Page*/
 
+
+/* Mobile Screen Styles*/
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
@@ -95,5 +146,32 @@ and (max-device-width : 480px) {
  .navbar-toggler{
    border-style: none;
    margin-top: 20px;
+ }
+ .header-info{
+   display: inline-block;
+   margin: 10px;
+ }
+ .header-info button{
+   margin: 20px;
+ }
+ .header-img h1{
+   font-size: 30px;
+ }
+ .header-img p{
+   font-size: 20px;
+ }
+ .header-img button{
+   color: white;
+   background-color: #00CECB;
+   font-size: 12px;
+   margin-top: 0px;
+ }
+ .jumbotron{
+   height: 250px;
+ }
+ .Column
+ {
+     height: 100px;
+     width: 33.33%;
  }
 }

@@ -15,41 +15,41 @@ export default class Home extends Component {
                 <a href="/contact" className="contact-us"> Contact Us Today!</a>
               </div>
             </div>
-            <div className="animal-search Row">
-              <div className="dogs Column">
+            <div className="animal-search row">
+              <div className="dogs col-lg-4 col-md-12 col-sm-12">
                 <Link to="/dogs" className="animal"><h1>Find A Dog</h1><img src={Dog}/></Link>
               </div>
-              <div className="cats Column">
+              <div className="cats col-lg-4 col-md-12 col-sm-12">
                 <Link to="/cats" className="animal"><h1>Find A Cat</h1><img src={Cat}/></Link>
               </div>
-              <div className="other Column">
+              <div className="other col-lg-4 col-md-12 col-sm-12">
                 <Link to="/other-animals" className="animal"><h1>Find Other</h1><img src={Other}/></Link>
               </div>
             </div>
             <h2>Featured Pets</h2>
             <div className="row featured-animals">
-              <div className="card col-lg-4 col-md-12">
+              <div className="card col-lg-4 col-md-12 col-sm-12">
                 <img className="card-img-top" src="" alt="Card image cap" />
                   <div className="card-body">
                     <h5 className="card-title">Card title</h5>
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
-                    <a href="#" class="btn btn-primary">More</a>
+                    <a href="#" className="btn btn-primary">More</a>
                   </div>
               </div>
-              <div className="card col-lg-4 col-md-12">
+              <div className="card col-lg-4 col-md-12 col-sm-12">
                 <img className="card-img-top" src="" alt="Card image cap" />
                   <div className="card-body">
                     <h5 className="card-title">Card title</h5>
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
-                    <a href="#" class="btn btn-primary">More</a>
+                    <a href="#" className="btn btn-primary">More</a>
                   </div>
               </div>
-              <div className="card col-lg-4 col-md-12">
+              <div className="card col-lg-4 col-md-12 col-sm-12">
                 <img className="card-img-top" src="" alt="Card image cap" />
                   <div className="card-body">
                     <h5 className="card-title">Card title</h5>
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
-                    <a href="#" class="btn btn-primary">More</a>
+                    <a href="#" className="btn btn-primary">More</a>
                   </div>
               </div>
             </div>

@@ -15,8 +15,8 @@ h1{
 .collapse .navbar-collapse{
   float: right;
 }
-ul li{
-  float: right;
+.active{
+  color: red;
 }
 .home{
   display: inline;
@@ -25,12 +25,30 @@ ul li{
   float: left;
   clear: both;
 }
+.contact-us-info p img{
+  width: 25px;
+  margin: 10px;
+}
+.contact-page{
+  margin-top: 5%;
+}
+.contact-form{
+  text-align: center;
+}
+.contact-form label{
+  float: left;
+  font-size: 20px;
+}
+.contact-page .card{
+  background-color: #FF5E5B;
+  color: white;
+  font-size: 20px;
+}
 .link{
  margin: 20px;
  font-size: 20px;
- float: right !important;
- display: inline-block;
  text-decoration: none;
+ clear: both;
 }
 a:visited, a{
   color: white;
@@ -46,20 +64,13 @@ a .active{
  width: 100px;
 }
 /* Homepage Animal Search */
-.Row
-{
-    display: table;
-    width: 100%; /*Optional*/
+.animal-search {
+  text-align: center;
+  margin: 0 auto;
 }
-.Column
-{
-    height: 50px;
-    display: table-cell;
-    width: 33.33%;
-    text-align: center;
-}
+
 .dogs,.other{
-  background-color: #FF5E5B
+  background-color: #FF5E5B;
 }
 a:hover{
   text-decoration: none;
@@ -71,8 +82,8 @@ a:hover{
   text-align: center !important;
 }
 .cats button{
-background-color: Transparent;
-border-style: none;
+  background-color: Transparent;
+  border-style: none;
 }
 .featured-animals{
   margin: 10px !important;

@@ -4,6 +4,31 @@ import Dog from './assets/dog.png';
 import Other from './assets/bunny.png'
 import { Link } from 'react-router-dom';
 export default class Home extends Component {
+  constructor(){
+    super();
+    this.state={
+      featuredAnimals:[],
+    };
+  }
+  componentDidMount(){
+    fetch('http://localhost:8080')
+    .then(results=>{
+      return results.json();
+    }).then(data=>{
+      let animals = data.map((animal)=>{
+        return(
+          <div className="card col-lg-4 col-md-12 col-sm-12 featured-animals">
+            <img className="card-img-top featured-pic" src={animal.img} alt={animal.name} />
+              <div className="card-body">
+                <h5 className="card-title">{animal.name}</h5>
+                <a href="#" className="btn btn-primary">More</a>
+              </div>
+          </div>
+        )
+      })
+      this.setState({featuredAnimals:animals})
+    })
+  }
     render() {
         return (
           <div>
@@ -27,32 +52,9 @@ export default class Home extends Component {
               </div>
             </div>
             <h2>Featured Pets</h2>
-            <div className="row featured-animals">
-              <div className="card col-lg-4 col-md-12 col-sm-12">
-                <img className="card-img-top" src="" alt="Card image cap" />
-                  <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
-                    <a href="#" className="btn btn-primary">More</a>
-                  </div>
+              <div className="row">
+              {this.state.featuredAnimals}
               </div>
-              <div className="card col-lg-4 col-md-12 col-sm-12">
-                <img className="card-img-top" src="" alt="Card image cap" />
-                  <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
-                    <a href="#" className="btn btn-primary">More</a>
-                  </div>
-              </div>
-              <div className="card col-lg-4 col-md-12 col-sm-12">
-                <img className="card-img-top" src="" alt="Card image cap" />
-                  <div className="card-body">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
-                    <a href="#" className="btn btn-primary">More</a>
-                  </div>
-              </div>
-            </div>
           </div>
         )
     }

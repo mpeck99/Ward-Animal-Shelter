@@ -86,8 +86,19 @@ a:hover{
   border-style: none;
 }
 .featured-animals{
-  margin: 10px !important;
-  height: 500px;
+  height: 550px;
+  text-align:center;
+}
+.featured-animals .card-body{
+    margin: 0 auto;
+}
+.featured-pic{
+  height:450px;
+  width: 450px !important;
+  border-radius:10% !important;
+  padding: 10px;
+  margin: 0 auto;
+  object-fit: cover;
 }
 /* Homepage Header/Jumbotron */
 .header-img{

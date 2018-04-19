@@ -8,9 +8,10 @@ const Schema = mongoose.Schema;
 var animalSchema = new Schema({
 	Name: String,
 	Type: String,
-  Age: String
+  Age: String,
+	img: String
 }, {
-	collection: 'animals'
+	collection: 'featured-animals'
 });
 var Animal = mongoose.model('Animal',animalSchema);
 mongoose.connect('mongodb://mpeck:root@ds243059.mlab.com:43059/animals');

@@ -7,49 +7,49 @@ export default class Cats extends Component{
       <div className="card col-lg-4 col-md-6 col-sm-12">
         <img className="card-img-top" src="" alt="Card image cap" />
       <div className="card-body">
-        <h5 className="card-title">Card title</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
-        <a href="#" className="btn btn-primary">Go somewhere</a>
+        <h5 className="card-title">Animal Name</h5>
+        <p className="card-text">Some Info about the animal goes here</p>
+        <a href="#" className="btn btn-primary">Contact Us</a>
       </div>
       </div>
       <div className="card col-lg-4 col-md-6 col-sm-12">
         <img className="card-img-top" src="" alt="Card image cap" />
       <div className="card-body">
-        <h5 className="card-title">Card title</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
-        <a href="#" className="btn btn-primary">Go somewhere</a>
+        <h5 className="card-title">Animal Name</h5>
+        <p className="card-text">Some Info about the animal goes here</p>
+        <a href="#" className="btn btn-primary">Contact Us</a>
       </div>
       </div>
       <div className="card col-lg-4 col-md-6 col-sm-12">
         <img className="card-img-top" src="" alt="Card image cap" />
       <div className="card-body">
-        <h5 className="card-title">Card title</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
-        <a href="#" className="btn btn-primary">Go somewhere</a>
+        <h5 className="card-title">Animal Name</h5>
+        <p className="card-text">Some Info about the animal goes here</p>
+        <a href="#" className="btn btn-primary">Contact Us</a>
       </div>
       </div>
       <div className="card col-lg-4 col-md-6 col-sm-12">
         <img className="card-img-top" src="" alt="Card image cap" />
       <div className="card-body">
-        <h5 className="card-title">Card title</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
-        <a href="#" className="btn btn-primary">Go somewhere</a>
+        <h5 className="card-title">Animal Name</h5>
+        <p className="card-text">Some Info about the animal goes here</p>
+        <a href="#" className="btn btn-primary">Contact Us</a>
       </div>
       </div>
       <div className="card col-lg-4 col-md-6 col-sm-12">
         <img className="card-img-top" src="" alt="Card image cap" />
       <div className="card-body">
-        <h5 className="card-title">Card title</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
-        <a href="#" className="btn btn-primary">Go somewhere</a>
+        <h5 className="card-title">Animal Name</h5>
+        <p className="card-text">Some Info about the animal goes here</p>
+        <a href="#" className="btn btn-primary">Contact Us</a>
       </div>
       </div>
       <div className="card col-lg-4 col-md-6 col-sm-12">
         <img className="card-img-top" src="" alt="Card image cap" />
       <div className="card-body">
-        <h5 className="card-title">Card title</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>
-        <a href="#" className="btn btn-primary">Go somewhere</a>
+        <h5 className="card-title">Animal Name</h5>
+        <p className="card-text">Some Info about the animal goes here</p>
+        <a href="#" className="btn btn-primary">Contact Us</a>
       </div>
       </div>
       </div>

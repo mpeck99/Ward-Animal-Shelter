@@ -85,18 +85,21 @@ a:hover{
   background-color: Transparent;
   border-style: none;
 }
-.featured-animals{
+.animals{
   height: 550px;
   text-align:center;
+  padding: 0px;
 }
-.featured-animals .card-body{
+.card{
     margin: 0 auto;
 }
-.featured-pic{
+.card-body{
+  margin: 0px;
+  padding: 5px;
+}
+.animal-pic{
   height:450px;
-  width: 450px !important;
-  border-radius:10% !important;
-  padding: 10px;
+  width: 100% !important;
   margin: 0 auto;
   object-fit: cover;
 }
@@ -138,9 +141,7 @@ a:hover{
   text-decoration: none;
   font-size: 28px;
 }
-.card img, .card-body{
-  width: 400px;
-}
+
 .animal h1{
   text-align: center;
 }

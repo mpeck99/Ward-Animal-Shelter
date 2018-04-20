@@ -17,8 +17,8 @@ export default class Home extends Component {
     }).then(data=>{
       let animals = data.map((animal)=>{
         return(
-          <div className="card col-lg-4 col-md-12 col-sm-12 featured-animals">
-            <img className="card-img-top featured-pic" src={animal.img} alt={animal.name} />
+          <div className="card col-lg-4 col-md-12 col-sm-12 animals">
+            <img className="card-img-top animal-pic" src={animal.img} alt={animal.name} />
               <div className="card-body">
                 <h5 className="card-title">{animal.name}</h5>
                 <a href="#" className="btn btn-primary">More</a>
@@ -51,10 +51,12 @@ export default class Home extends Component {
                 <Link to="/other-animals" className="animal"><h1>Find Other</h1><img src={Other}/></Link>
               </div>
             </div>
-            <h2>Featured Pets</h2>
+            <div className="container">
+              <h2>Featured Pets</h2>
               <div className="row">
-              {this.state.featuredAnimals}
+                {this.state.featuredAnimals}
               </div>
+            </div>
           </div>
         )
     }

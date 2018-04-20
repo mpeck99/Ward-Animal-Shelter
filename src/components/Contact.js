@@ -3,11 +3,15 @@ import Navigation from './Navigation';
 import Phone from './assets/phone.png';
 import Email from './assets/email.png';
 import Location from './assets/location.png';
+import GoogleMaps from './Map';
 export default class About extends Component {
     render() {
         return (
           <div className="contact-page container">
           <h1>Contact Us</h1>
+          <div className="map">
+          <GoogleMaps />
+          </div>
           <div className="row ">
             <div className="card col-lg-6 col-md-6 col-sm-12">
               <div className="card-body contact-us-info">

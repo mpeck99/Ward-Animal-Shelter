@@ -15,9 +15,6 @@ h1{
 .collapse .navbar-collapse{
   float: right;
 }
-.active{
-  color: red;
-}
 .home{
   display: inline;
 }
@@ -56,9 +53,6 @@ a:visited, a{
 }
 a img{
   padding: 20px;
-}
-a .active{
-  color: red;
 }
 .logo{
  width: 100px;
@@ -102,6 +96,10 @@ a:hover{
   width: 100% !important;
   margin: 0 auto;
   object-fit: cover;
+}
+.footer{
+  text-align: center;
+  margin: 30px 0px 30px 0px;
 }
 /* Homepage Header/Jumbotron */
 .header-img{
@@ -165,6 +163,10 @@ h2{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 50%;
   margin: 0 auto;
+}
+.map{
+  height: 500px;
+  width: 100%;
 }
 /* Contact Page*/
 

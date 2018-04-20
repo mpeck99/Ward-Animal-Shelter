@@ -3,6 +3,7 @@ import Cat from './assets/cat.png';
 import Dog from './assets/dog.png';
 import Other from './assets/bunny.png'
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 export default class Home extends Component {
   constructor(){
     super();
@@ -17,7 +18,7 @@ export default class Home extends Component {
     }).then(data=>{
       let animals = data.map((animal)=>{
         return(
-          <div className="card col-lg-4 col-md-12 col-sm-12 animals">
+          <div className="card col-lg-4 col-md-12 col-sm-12 animals" key={animal.name}>
             <img className="card-img-top animal-pic" src={animal.img} alt={animal.name} />
               <div className="card-body">
                 <h5 className="card-title">{animal.name}</h5>
@@ -57,6 +58,7 @@ export default class Home extends Component {
                 {this.state.featuredAnimals}
               </div>
             </div>
+            <Footer />
           </div>
         )
     }

@@ -21,7 +21,7 @@ class SimpleMap extends Component {
           defaultZoom={this.props.zoom}
         >
           <AnyReactComponent
-            lat={35.030091}
+            lat={35.040091}
             lng={-91.955039}
             text={'Ward Animal Shelter'}
           />

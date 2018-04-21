@@ -4,6 +4,7 @@ import Phone from './assets/phone.png';
 import Email from './assets/email.png';
 import Location from './assets/location.png';
 import GoogleMaps from './Map';
+import Footer from './Footer';
 export default class About extends Component {
     render() {
         return (
@@ -37,6 +38,7 @@ export default class About extends Component {
               <button type="submit" className="btn btn-default contact-button">Send Message</button>
             </form>
         </div>
+        <Footer />
         </div>
         )
     }

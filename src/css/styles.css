@@ -28,6 +28,7 @@ h1{
 }
 .contact-page{
   margin-top: 5%;
+  text-align: center;
 }
 .contact-form{
   text-align: center;
@@ -167,6 +168,7 @@ h2{
 .map{
   height: 500px;
   width: 100%;
+  margin-bottom: 20px;
 }
 /* Contact Page*/
 
@@ -180,8 +182,25 @@ and (max-device-width : 480px) {
     text-decoration: none;
     font-size: 18px;
   }
+  .header-img a{
+    font-size: 12px;
+    border-radius: 50px;
+    opacity: .8;
+    margin: 20px;
+    padding: 10px;
+  }
+  .animal-pic{
+    height:250px;
+    width: 100% !important;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  .animals{
+    height: 350px;
+    text-align:center;
+    }
   .logo{
-   width: 30px;
+   width: 100px;
  }
  .navbar-toggler{
    border-style: none;
@@ -203,7 +222,7 @@ and (max-device-width : 480px) {
  .header-img button{
    color: white;
    background-color: #00CECB;
-   font-size: 12px;
+   font-size: 10px;
    margin-top: 0px;
  }
  .header-img{
@@ -215,4 +234,37 @@ and (max-device-width : 480px) {
      height: 100px;
      width: 33.33%;
  }
+ .about p{
+   font-size: 22px;
+   text-align: center;
+ }
+ .about{
+   width: 100%;
+   margin: 0 auto;
+ }
+}
+
+@media only screen
+and (min-device-width : 480px)
+and (max-device-width : 800px){
+  .about p{
+    font-size: 22px;
+    text-align: center;
+  }
+  .animal-pic{
+    height:550px;
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  .animals{
+    height: 700px;
+    text-align:center;
+    }
+  .navbar-brand img{
+   width: 100px;
+ }
+  .about{
+    width: 75%;
+    margin: 0 auto;
+  }
 }

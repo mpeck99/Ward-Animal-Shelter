@@ -14,25 +14,25 @@ export default class About extends Component {
           <GoogleMaps />
           </div>
           <div className="row ">
-            <div className="card col-lg-6 col-md-6 col-sm-12">
-              <div className="card-body contact-us-info">
+            <div className="col-lg-6 col-md-6 col-sm-12">
+              <div className="contact-us-info">
                 <h1>Our Information</h1>
                 <p><img src={Email}/>wardanimalshelter@cityofward.com</p>
                 <p><img src={Phone}/>501-843-7686, ext 309</p>
                 <p><img src={Location}/>405 Hickory St, Ward, AR 72176</p>
-              </div>
-            </div>
+                </div>
+                </div>
             <form className="col-lg-6 col-md-6 col-sm-12 contact-form">
               <div className="form-group">
-                <label for="user-name">Full Name</label>
+                <label htmlFor="user-name">Full Name</label>
                 <input type="text" className="form-control" id="user-name" name="user-name" placeholder="Full Name" />
                 </div>
               <div className="form-group">
-                <label for="email">Email: </label>
+                <label htmlFor="email">Email: </label>
                 <input type="email" className="form-control" name="email" id="exampleInputEmail1" placeholder="Email" />
               </div>
               <div className="form-group">
-              <label for="msg">Message:</label>
+              <label htmlFor="msg">Message:</label>
               <textarea className="form-control" name="msg" rows="5" placeholder="Your message"></textarea>
               </div>
               <button type="submit" className="btn btn-default contact-button">Send Message</button>

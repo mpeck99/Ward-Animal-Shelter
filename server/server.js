@@ -10,7 +10,8 @@ var featuredAnimalSchema = new Schema({
 	Name: String,
 	Type: String,
   Age: String,
-	img: String
+	img: String,
+	gender:String
 }, {
 	collection: 'featured-animals'
 });
@@ -18,7 +19,8 @@ var animalSchema = new Schema({
 	Name: String,
 	Type: String,
   Age: String,
-	img: String
+	img: String,
+	gender:String
 }, {
 	collection: 'animals'
 });

@@ -15,30 +15,36 @@ export default class Others extends Component{
     }).then(data=>{
       let animals = data.map((animal)=>{
         return(
-          <div className="card col-lg-4 col-md-12 col-sm-12 animals">
-            <img className="card-img-top animal-pic" src={animal.img} alt={animal.name} />
-              <div className="card-body">
-                <h5 className="card-title">{animal.name}</h5>
-                <a href="#" className="btn btn-primary" data-toggle="modal" data-target={"#"+animal.name}>More</a>
+          <div className="col-md-6 col-lg-4">
+          <div className="modal fade" id={animal.name} tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal-dialog" role="document">
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h5 className="modal-title" id="exampleModalLabel">{animal.name}</h5>
+                  <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
               </div>
-              <div className="modal fade" id={animal.name} tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div className="modal-dialog" role="document">
-                  <div className="modal-content">
-                    <div className="modal-header">
-                      <h5 className="modal-title" id="exampleModalLabel">{animal.name}</h5>
-                      <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                      </button>
-                  </div>
-                <div className="modal-body">
-                </div>
-                <div className="modal-footer">
-                  <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
-              </div>
-              </div>
-              </div>
+            <div className="modal-body">
+            <img src={animal.img} alt={animal.name} />
+              <p>Age: {animal.age}</p>
+              <p>Gender: {animal.gender}</p>
+            </div>
+            <button type="button" className="btn btn-primary" data-dismiss="modal">Call Today 501-843-7686, ext 309</button>
           </div>
+          </div>
+          </div>
+              <div className="card mb-4 box-shadow">
+                <img className="card-img-top animal-pic" src={animal.img} alt="Card image cap" />
+                <div className="card-body">
+                  <h1>{animal.name}</h1>
+                  <p className="card-text"></p>
+                    <div className="btn-group align-items-center">
+                      <button type="button" className="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target={"#"+animal.name}>More</button>
+                    </div>
+                </div>
+              </div>
+            </div>
         )
       })
       this.setState({otherAnimals:animals})
@@ -48,6 +54,7 @@ export default class Others extends Component{
     return(
       <div className="container">
       <a href="/"><strong>{arrow} Back</strong></a>
+      <h1> Avaliable Pets</h1>
         <div className="Others row">
           {this.state.otherAnimals}
         </div>

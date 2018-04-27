@@ -4,9 +4,27 @@ html, #root{
   height: 100%;
   font-family: 'Eczar', serif;
 }
+.container{
+  padding: 0px;
+}
 /* headers and paragraphs*/
 h1{
   padding: 10px;
+}
+.animal h1{
+  text-align: center;
+}
+h2{
+  text-align: center;
+  font-size: 50px;
+  color: #333745;
+  margin: 10px;
+}
+.header-img h1{
+  font-size: 50px;
+}
+.header-img p{
+  font-size: 38px;
 }
 /* navigation */
 .navbar{
@@ -15,6 +33,11 @@ h1{
 .collapse .navbar-collapse{
   float: right;
 }
+.navbar-brand a{
+  color: #333745;
+  text-decoration: none;
+  font-size: 28px;
+}
 .home{
   display: inline;
 }
@@ -22,6 +45,83 @@ h1{
   float: left;
   clear: both;
 }
+/* Images */
+.logo{
+ width: 100px;
+}
+a img{
+  padding: 20px;
+}
+.animal-pic, .modal-body img{
+  height:450px;
+  margin: 0 auto;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+/* Links */
+.link{
+ margin: 20px;
+ font-size: 20px;
+ text-decoration: none;
+ clear: both;
+}
+a:visited, a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+  color: white;
+}
+/* Homepage Animal Search */
+.animal-search {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.dogs,.other{
+  background-color: #FF5E5B;
+}
+
+.cats{
+  background-color: #00CECB;
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+.cats button{
+  background-color: Transparent;
+  border-style: none;
+}
+.cats:hover,.dogs:hover,.other:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 1;
+}
+.animals{
+  height: 550px;
+  text-align:center;
+  padding: 0px;
+}
+.card{
+    margin: 0 auto;
+}
+.card-body{
+  text-align: center;
+}
+.footer{
+  text-align: center;
+  margin: 30px 0px 30px 0px;
+}
+.modal-footer{
+  text-align:center !important;
+}
+.btn-primary{
+  background-color: #00CECB !important;
+  border-style:none;
+}
+/* Contact Us Page */
 .contact-us-info p img{
   width: 25px;
   margin: 10px;
@@ -46,73 +146,11 @@ h1{
   color: white;
   font-size: 20px;
 }
-.link{
- margin: 20px;
- font-size: 20px;
- text-decoration: none;
- clear: both;
-}
-a:visited, a{
-  color: white;
-  text-decoration: none;
-}
-a img{
-  padding: 20px;
-}
-.logo{
- width: 100px;
-}
-/* Homepage Animal Search */
-.animal-search {
-  text-align: center;
-  margin: 0 auto;
-}
-
-.dogs,.other{
-  background-color: #FF5E5B;
-}
-a:hover{
-  text-decoration: none;
-  color: white;
-}
-.cats{
-  background-color: #00CECB;
-  vertical-align: middle !important;
-  text-align: center !important;
-}
-.cats button{
-  background-color: Transparent;
-  border-style: none;
-}
-.animals{
-  height: 550px;
-  text-align:center;
-  padding: 0px;
-}
-.card{
-    margin: 0 auto;
-}
-.card-body{
-  text-align: center;
-}
-.animal-pic, .modal-body img{
-  height:450px;
-  /*width: 100% !important;*/
-  margin: 0 auto;
-  object-fit: cover;
+.map{
+  height: 500px;
   width: 100%;
-  display: block;
-}
-.footer{
-  text-align: center;
-  margin: 30px 0px 30px 0px;
-}
-.modal-footer{
-  text-align:center !important;
-}
-.btn-primary{
-  background-color: #00CECB !important;
-  border-style:none;
+  padding: 0px;
+  margin-bottom: 20px;
 }
 /* Homepage Header/Jumbotron */
 .header-img{
@@ -132,11 +170,25 @@ a:hover{
   display: inline-block;
   margin: 10px;
 }
-.header-img h1{
-  font-size: 50px;
+/* Home Page Animal Search & Animal Pages */
+.animal-row {
+    padding: 5px;
 }
-.header-img p{
-  font-size: 38px;
+.card-body{
+  background-color: #00CECB;
+  color: white;
+}
+.card-body button{
+  color: white;
+  background-color: #FF5E5B;
+  border-style: none;
+  font-size: 22px;
+  box-shadow: 0 5px #666;
+  transform: translateY(5px);
+}
+.card-body button:hover{
+  color: #FF5E5B;
+  background-color: white;
 }
 .header-img a{
   color: white;
@@ -147,20 +199,11 @@ a:hover{
   margin: 5px;
   padding: 10px;
 }
-.navbar-brand a{
-  color: #333745;
-  text-decoration: none;
-  font-size: 28px;
-}
-
-.animal h1{
-  text-align: center;
-}
-h2{
-  text-align: center;
-  font-size: 50px;
-  color: #333745;
-  margin: 10px;
+/* About Us Page */
+.about{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 50%;
+  margin: 0 auto;
 }
 .about h1{
   background-color: #00CECB;
@@ -169,27 +212,10 @@ h2{
   font-size: 50px;
 }
 .about p{
-  font-size: 42px;
+  font-size: 30px;
   text-align: center;
 }
-.about{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 50%;
-  margin: 0 auto;
-}
-.map{
-  height: 500px;
-  width: 100%;
-  padding: 0px;
-  margin-bottom: 20px;
-}
-.animal-row {
-    padding: 5px;
-}
-.container{
-  padding: 0px;
-}
-/* Contact Page*/
+/* Animations */
 
 
 /* Mobile Screen Styles*/
@@ -262,7 +288,6 @@ and (max-device-width : 480px) {
    margin: 0 auto;
  }
 }
-
 @media only screen
 and (min-device-width : 480px)
 and (max-device-width : 800px){
@@ -285,5 +310,15 @@ and (max-device-width : 800px){
   .about{
     width: 75%;
     margin: 0 auto;
+  }
+  .about h1{
+    background-color: #00CECB;
+    padding: 20px;
+    width: 100%;
+    font-size: 32px;
+  }
+  .about p{
+    font-size: 18px;
+    text-align: center;
   }
 }

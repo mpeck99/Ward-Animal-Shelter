@@ -16,7 +16,7 @@ export default class Dogs extends Component{
       let animals = data.map((dog)=>{
         return(
           <div className="col-md-6 col-lg-4">
-          <div className="modal fade" id={dog.name} tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div className="modal fade" id={dog.name} tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div className="modal-dialog" role="document">
               <div className="modal-content">
                 <div className="modal-header">
@@ -25,7 +25,7 @@ export default class Dogs extends Component{
                   <span aria-hidden="true">&times;</span>
                   </button>
               </div>
-            <div className="modal-body">
+            <div className="modal-body animal-card">
             <img src={dog.img} alt={dog.name} />
             <p>Age: {dog.age}</p>
             <p>Gender: {dog.gender}</p>
@@ -36,7 +36,7 @@ export default class Dogs extends Component{
           </div>
               <div className="card mb-4 box-shadow">
                 <img className="card-img-top animal-pic" src={dog.img} alt="Card image cap" />
-                <div className="card-body">
+                <div className="card-body animal-card">
                   <h1>{dog.name}</h1>
                   <p className="card-text"></p>
                     <div className="btn-group align-items-center">

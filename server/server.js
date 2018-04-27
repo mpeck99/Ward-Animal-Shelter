@@ -5,6 +5,8 @@ const PORT = 8080;
 const cors = require('cors');
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+var nodemailer = require('nodemailer');
+var router = express.Router();
 mongoose.connect('mongodb://mpeck:root@ds243059.mlab.com:43059/animals');
 var featuredAnimalSchema = new Schema({
 	Name: String,
@@ -63,4 +65,31 @@ app.get('/other',function(req,res){
 		if(err) throw err;
 		res.send(dogs);
 	});
+})
+app.get('/send',function(req,res){
+	var transporter = nodemailer.createTransport({
+	  service: 'gmail',
+	  auth:{
+	    user:"wardanimalshelter@gmail.com",
+	    pass:"animalshelter"
+	  }
+	});
+	var mailOptions={
+	  from: 'wardanimalshelter@gmail.com',
+	  to:"wardanimalshelter@gmail.com",
+	  subject:req.query.email,
+	  text:req.query.msg
+	}
+	transporter.sendMail(mailOptions, function(error, info){
+	  if (error) {
+	    console.log(error);
+	  } else {
+	    console.log('Email sent: ' + info.response);
+			console.log(req.query.email);
+			res.redirect('/sent');
+	  }
+	});
+});
+app.get('/sent',function(req,res){
+	console.log('sent');
 })

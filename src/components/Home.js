@@ -28,7 +28,7 @@ export default class Home extends Component {
                   <span aria-hidden="true">&times;</span>
                   </button>
               </div>
-            <div className="modal-body">
+            <div className="modal-body animal-card">
             <img src={animal.img} alt={animal.name} />
             <p>Age: {animal.age}</p>
             <p>Gender: {animal.gender}</p>
@@ -38,8 +38,8 @@ export default class Home extends Component {
           </div>
           </div>
               <div className="card mb-4 box-shadow">
-                <img className="card-img-top animal-pic" src={animal.img} alt="Card image cap" />
-                <div className="card-body">
+                <img className="card-img-top animal-pic" src={animal.img} alt={animal.name} />
+                <div className="card-body animal-card">
                   <h1>{animal.name}</h1>
                   <p className="card-text"></p>
                     <div className="btn-group align-items-center">
@@ -66,13 +66,13 @@ export default class Home extends Component {
             </div>
             <div className="animal-search row">
               <div className="dogs col-lg-4 col-md-12 col-sm-12">
-                <Link to="/dogs" className="animal"><h1>Find A Dog</h1><img src={Dog}/></Link>
+                <Link to="/dogs" className="animal"><h1>Find A Dog</h1><img src={Dog} alt="Search Dogs"/></Link>
               </div>
               <div className="cats col-lg-4 col-md-12 col-sm-12">
-                <Link to="/cats" className="animal"><h1>Find A Cat</h1><img src={Cat}/></Link>
+                <Link to="/cats" className="animal"><h1>Find A Cat</h1><img src={Cat} alt="Search Cats"/></Link>
               </div>
               <div className="other col-lg-4 col-md-12 col-sm-12">
-                <Link to="/other-animals" className="animal"><h1>Find Other</h1><img src={Other}/></Link>
+                <Link to="/other-animals" className="animal"><h1>Find Other</h1><img src={Other} alt="Search Other Animals"/></Link>
               </div>
             </div>
             <div className="container">

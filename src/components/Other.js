@@ -35,7 +35,7 @@ export default class Others extends Component{
           </div>
           </div>
               <div className="card mb-4 box-shadow">
-                <img className="card-img-top animal-pic" src={animal.img} alt="Card image cap" />
+                <img className="card-img-top animal-pic" src={animal.img} alt={animal.name}/>
                 <div className="card-body animal-card">
                   <h1>{animal.name}</h1>
                   <p className="card-text"></p>

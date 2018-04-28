@@ -18,8 +18,8 @@ export default class Home extends Component {
     }).then(data=>{
       let animals = data.map((animal)=>{
         return(
-          <div className="col-lg-4">
-          <div className="modal fade" id={animal.name} tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div className="col-lg-4" key={animal.name}>
+          <div className="modal fade" id={animal.name} tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div className="modal-dialog" role="document">
               <div className="modal-content">
                 <div className="modal-header">
@@ -33,7 +33,7 @@ export default class Home extends Component {
             <p>Age: {animal.age}</p>
             <p>Gender: {animal.gender}</p>
             </div>
-              <button type="button" className="btn btn-primary" data-dismiss="modal">Call Today 501-843-7686, ext 309</button>
+            <a href="/contact" className="animal-button" >Contact us!</a>
           </div>
           </div>
           </div>

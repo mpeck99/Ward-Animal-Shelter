@@ -11,6 +11,11 @@ html, #root{
 h1{
   padding: 10px;
 }
+.errors{
+  color: red;
+  font-weight: bold;
+  font-size: 22px;
+}
 .animal h1{
   text-align: center;
 }
@@ -37,6 +42,7 @@ h2{
   color: #333745;
   text-decoration: none;
   font-size: 28px;
+  margin: 25px;
 }
 .home{
   display: inline;
@@ -51,6 +57,9 @@ h2{
 }
 a img{
   padding: 20px;
+}
+.modal-title{
+  font-size: 32px;
 }
 .animal-pic, .modal-body img{
   height:450px;
@@ -89,6 +98,10 @@ a:hover{
   vertical-align: middle !important;
   text-align: center !important;
 }
+.success{
+  text-align: center;
+  font-size: 22px;
+}
 .cats button{
   background-color: Transparent;
   border-style: none;
@@ -117,9 +130,12 @@ a:hover{
 .modal-footer{
   text-align:center !important;
 }
-.btn-primary{
+.animal-button{
   background-color: #00CECB !important;
   border-style:none;
+  text-align:center;
+  padding: 15px;
+  font-size: 20px;
 }
 /* Contact Us Page */
 .contact-us-info p img{

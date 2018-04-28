@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import Cats from './components/Cats';
 import Others from './components/Other';
 import Dogs from './components/Dogs';
+import Success from './components/Success';
 import Navigation from './components/Navigation';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './css/styles.css';
@@ -22,6 +23,7 @@ class App extends Component {
         <Route path="/cats" component={Cats}/>
         <Route path="/dogs" component={Dogs}/>
         <Route path="/other-animals" component={Others}/>
+        <Route path="/success" component={Success}/>
         </Switch>
         </div>
       </Router>

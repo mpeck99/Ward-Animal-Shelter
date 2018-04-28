@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Navigation from './Navigation';
 import Footer from './Footer'
 export default class About extends Component {
     render() {

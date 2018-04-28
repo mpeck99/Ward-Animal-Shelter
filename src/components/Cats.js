@@ -15,7 +15,7 @@ export default class Cats extends Component{
     }).then(data=>{
       let animals = data.map((cat)=>{
         return(
-          <div className="col-md-6 col-lg-4">
+          <div className="col-md-6 col-lg-4" key={cat.name}>
           <div className="modal fade" id={cat.name} tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div className="modal-dialog" role="document">
               <div className="modal-content">
@@ -35,7 +35,7 @@ export default class Cats extends Component{
           </div>
           </div>
               <div className="card mb-4 box-shadow">
-                <img className="card-img-top animal-pic" src={cat.img} alt="Card image cap" />
+                <img className="card-img-top animal-pic" src={cat.img} alt={cat.name} />
                 <div className="card-body animal-card">
                   <h1>{cat.name}</h1>
                   <p className="card-text"></p>

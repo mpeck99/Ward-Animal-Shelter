@@ -1,10 +1,6 @@
-import React, {PropTypes} from 'react';
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
-import { Link, IndexLink } from 'react-router-dom';
+import React from 'react';
+import { Link} from 'react-router-dom';
 import Logo from './assets/paw.png';
-//import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/styles.css';
 export default class Navigation extends React.Component{
@@ -12,7 +8,7 @@ export default class Navigation extends React.Component{
     return(
       <nav className="navbar navbar-expand-md navbar-light">
           <div className="navbar-brand navbar-left hamburger-menu">
-              <a href="/"><img src={Logo} className="logo" />Ward Animal Shelter</a>
+              <a href="/"><img src={Logo} className="logo" alt="menu"/>Ward Animal Shelter</a>
               <button type="button" className="navbar-toggler navbar-right" data-toggle="collapse" data-target="#navbarCollapse">
                   <span className="navbar-toggler-icon navbar-toggler-right"></span>
               </button>

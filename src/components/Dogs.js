@@ -35,7 +35,7 @@ export default class Dogs extends Component{
           </div>
           </div>
               <div className="card mb-4 box-shadow">
-                <img className="card-img-top animal-pic" src={dog.img} alt="Card image cap" />
+                <img className="card-img-top animal-pic" src={dog.img} alt={dog.name} />
                 <div className="card-body animal-card">
                   <h1>{dog.name}</h1>
                   <p className="card-text"></p>

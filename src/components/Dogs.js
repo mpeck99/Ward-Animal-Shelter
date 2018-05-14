@@ -30,7 +30,7 @@ export default class Dogs extends Component{
             <p>Age: {dog.age}</p>
             <p>Gender: {dog.gender}</p>
             </div>
-              <button type="button" className="btn btn-primary" data-dismiss="modal">Call Today 501-843-7686, ext 309</button>
+              <a href="/contact" className="animal-button" >Contact us!</a>
           </div>
           </div>
           </div>

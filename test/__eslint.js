@@ -2,21 +2,20 @@ const eslint = require('mocha-eslint');
 
 const filePaths = [
   'server/server.js',
-  'src/components/About.js',
-  'src/components/Contact.js',
-  'src/components/Cats.js',
-  'src/components/Dogs.js',
-  'src/components/Other.js',
-  'src/components/Home.js',
-  'src/components/Footer.js',
-  'src/components/Map.js',
-  'src/components/Success.js',
+  'src/components/About.jsx',
+  'src/components/Contact.jsx',
+  'src/components/Cats.jsx',
+  'src/components/Dogs.jsx',
+  'src/components/Other.jsx',
+  'src/components/Home.jsx',
+  'src/components/Footer.jsx',
+  'src/components/Success.jsx',
 ];
 
 const rules = {
   formatter: 'stylish',
 
-  alwaysWarn:true,
+  alwaysWarn: true,
 
   timeout: 5000,
 
@@ -24,7 +23,8 @@ const rules = {
 
   strict: true,
 
-  contextName:'AirBnb Eslint Style Guide Tests'
+  contextName: 'AirBnb Eslint Style Guide Tests',
+
 };
 
-eslint(filePaths,rules);
+eslint(filePaths, rules);

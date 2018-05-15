@@ -28,7 +28,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "npm run build&&gh-pages -d build",
-    "styleguide": "mocha test/_eslint.js"
+    "styleguide": "mocha test/__eslint.js"
   },
   "description": "To run this download the zipped file then navigate to the project in your command prompt. Type npm start to start the react portion of the project. open another command prompt and navigate to the project type node server/server to run the express server.",
   "main": "index.js",

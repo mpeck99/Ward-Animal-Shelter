@@ -57,7 +57,6 @@ export default class Others extends Component {
   }
   render() {
     return (
-        // Looping through all of the state objects
       <div className="container">
         <a href="/"><strong>{arrow} Back</strong></a>
         <h1> Available Pets</h1>

@@ -7,7 +7,7 @@ const PORT = 8080;
 const cors = require('cors');
 const mongoose = require('mongoose');
 
-const Schema = mongoose.Schema;
+const { Schema } = mongoose.Schema;
 const nodemailer = require('nodemailer');
 
 

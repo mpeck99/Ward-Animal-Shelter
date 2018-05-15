@@ -1,3 +1,4 @@
+
 # Ward Animal Shelter
 
 ## Installation
@@ -27,3 +28,4 @@ This will start load the project in your current default browser
 You will also need to start the express server so that you can load the animals data.
 To do this open a new terminal and navigate back to the project folder and type
 `node server/server`
+

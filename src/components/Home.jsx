@@ -65,13 +65,13 @@ export default class Home extends Component {
         </div>
         <div className="animal-search row">
           <div className="dogs col-lg-4 col-md-12 col-sm-12">
-            <Link href="/dogs" className="animal"><h1>Find A Dog</h1><img src={Dog} alt="Search Dogs" /></Link>
+            <Link to="/dogs" href="/dogs" className="animal"><h1>Find A Dog</h1><img src={Dog} alt="Search Dogs" /></Link>
           </div>
           <div className="cats col-lg-4 col-md-12 col-sm-12">
-            <Link href="/cats" className="animal"><h1>Find A Cat</h1><img src={Cat} alt="Search Cats" /></Link>
+            <Link to="/cats" href="/cats" className="animal"><h1>Find A Cat</h1><img src={Cat} alt="Search Cats" /></Link>
           </div>
           <div className="other col-lg-4 col-md-12 col-sm-12">
-            <Link href="/other-animals" className="animal"><h1>Find Other</h1><img src={Other} alt="Search Other Animals" /></Link>
+            <Link to="/other-animals" href="/other-animals" className="animal"><h1>Find Other</h1><img src={Other} alt="Search Other Animals" /></Link>
           </div>
         </div>
         <div className="container">
